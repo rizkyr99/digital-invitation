@@ -18,7 +18,13 @@ export default function Home() {
         <section className='h-screen bg-[url("/images/hero.jpg")] bg-center bg-cover flex flex-col justify-between'>
           <div className='relative h-24 flex items-center px-4 bg-gradient-to-b from-black/30 to-transparent'>
             <div className='flex items-center w-full justify-between max-w-screen-xl mx-auto'>
-              <div className='text-xl text-white'>J&C</div>
+              <div className='relative text-5xl text-white font-diamond h-8'>
+                J
+                <span className='absolute inset-0 text-orange-500 flex justify-center'>
+                  &
+                </span>
+                C
+              </div>
               <div className='hidden lg:flex items-center gap-8'>
                 <a href='/' className='uppercase text-white'>
                   Couples
@@ -64,11 +70,30 @@ export default function Home() {
                   isMenuOpen ? 'w-screen' : 'w-0'
                 }`}>
                 <div className='w-screen flex flex-col gap-8 p-20'>
-                  <a href='' className='text-3xl'>
+                  <a
+                    href=''
+                    className='text-3xl text-orange-800 hover:text-black transition font-libre'>
                     Couples
                   </a>
-                  <a href='' className='text-3xl'>
-                    Couples
+                  <a
+                    href=''
+                    className='text-3xl text-orange-800 hover:text-black transition font-libre'>
+                    Galleries
+                  </a>
+                  <a
+                    href=''
+                    className='text-3xl text-orange-800 hover:text-black transition font-libre'>
+                    Date
+                  </a>
+                  <a
+                    href=''
+                    className='text-3xl text-orange-800 hover:text-black transition font-libre'>
+                    Location
+                  </a>
+                  <a
+                    href=''
+                    className='text-3xl text-orange-800 hover:text-black transition font-libre'>
+                    Wishes
                   </a>
                 </div>
               </div>
@@ -76,7 +101,7 @@ export default function Home() {
           </div>
           <div className='relative bg-gradient-to-t from-black/50 to-transparent h-[50%] flex flex-col justify-end'>
             <div className='w-full flex items-center gap-2'>
-              <div className='sm:whitespace-nowrap text-white text-4xl pl-8 md:pl-12'>
+              <div className='sm:whitespace-nowrap text-white text-4xl pl-8 md:pl-12 font-diamond max-sm:pr-8'>
                 Jefferson & Clara
               </div>
               <div className='hidden sm:block h-px w-full bg-white' />
@@ -88,7 +113,7 @@ export default function Home() {
               kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar
               terdapat tanda-tanda bagi kaum yang berfikir.” (QS. Ar-Rum: 21)
             </p>
-            <div className='lg:absolute bottom-16 -right-8 text-white text-lg pl-8 md:pl-12 lg:pl-0 max-lg:py-4 lg:rotate-90 tracking-widest'>
+            <div className='lg:absolute bottom-16 -right-8 text-white md:text-lg pl-8 md:pl-12 lg:pl-0 max-lg:py-4 lg:rotate-90 tracking-widest font-libre'>
               09/04/2019
             </div>
           </div>
