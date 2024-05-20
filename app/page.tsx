@@ -11,9 +11,9 @@ export default function Home() {
     setIsOpened(true);
   };
   return (
-    <main>
+    <>
       <Cover isOpen={isOpened} onOpen={onInvitationOpen} />
-      <div className={`${!isOpened && 'hidden'} no-scrollbar`}>
+      <main className={`${isOpened ? 'block' : 'hidden'}`}>
         <section className='h-screen bg-[url("/images/hero.jpg")] bg-center bg-cover flex flex-col justify-between'>
           <div className='relative h-24 flex items-center px-4 bg-gradient-to-b from-black/30 to-transparent'>
             <div className='flex items-center w-full justify-between max-w-screen-xl mx-auto'>
@@ -59,7 +59,7 @@ export default function Home() {
                 />
               </div>
               <div
-                className={`fixed z-40 top-0 left-0 h-screen w-screen max-w-screen-sm bg-amber-100 overflow-hidden transition-all duration-300 ease-in-out ${
+                className={`fixed z-40 top-0 left-0 h-screen max-w-screen-sm bg-amber-100 overflow-hidden transition-all duration-300 ease-in-out ${
                   isMenuOpen ? 'w-screen' : 'w-0'
                 }`}>
                 <div className='w-screen flex flex-col gap-8 p-20'>
@@ -92,7 +92,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-      </div>
-    </main>
+      </main>
+    </>
   );
 }
