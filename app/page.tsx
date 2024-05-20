@@ -1,5 +1,6 @@
 'use client';
 
+import Couples from '@/components/Couples';
 import Cover from '@/components/Cover';
 import { useState } from 'react';
 
@@ -92,6 +93,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <Couples />
       </main>
     </>
   );
