@@ -11,9 +11,9 @@ export default function Home() {
     setIsOpened(true);
   };
   return (
-    <>
+    <main>
       <Cover isOpen={isOpened} onOpen={onInvitationOpen} />
-      <main className={`${!isOpened && 'hidden'} no-scrollbar`}>
+      <div className={`${!isOpened && 'hidden'} no-scrollbar`}>
         <section className='h-screen bg-[url("/images/hero.jpg")] bg-center bg-cover flex flex-col justify-between'>
           <div className='relative h-24 flex items-center px-4 bg-gradient-to-b from-black/30 to-transparent'>
             <div className='flex items-center w-full justify-between max-w-screen-xl mx-auto'>
@@ -92,7 +92,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-      </main>
-    </>
+      </div>
+    </main>
   );
 }
