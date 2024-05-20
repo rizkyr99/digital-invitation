@@ -19,19 +19,19 @@ export default function Home() {
             <div className='flex items-center w-full justify-between max-w-screen-xl mx-auto'>
               <div className='text-xl text-white'>J&C</div>
               <div className='hidden lg:flex items-center gap-8'>
-                <a href='' className='uppercase text-white'>
+                <a href='/' className='uppercase text-white'>
                   Couples
                 </a>
-                <a href='' className='uppercase text-white'>
+                <a href='/' className='uppercase text-white'>
                   Galleries
                 </a>
-                <a href='' className='uppercase text-white'>
+                <a href='/' className='uppercase text-white'>
                   Date
                 </a>
-                <a href='' className='uppercase text-white'>
+                <a href='/' className='uppercase text-white'>
                   Location
                 </a>
-                <a href='' className='uppercase text-white'>
+                <a href='/' className='uppercase text-white'>
                   Wishes
                 </a>
               </div>
